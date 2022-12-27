@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scoped CSS Variables and JS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <h2><span class="hl">Picture Editor</span></h2>
+
+    <div class="controls-container">
+      <div class="controls">
+        <div>
+          <label for="spacing">Spacing:</label>
+          <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-changes="px">
+        </div>
+        <div>
+          <label for="blur">Blur:</label>
+          <input id="blur" type="range" name="blur" min="0" max="50" value="0" data-changes="px">
+        </div>
+        <div>
+          <label for="base">Base Color</label>
+          <input id="base" type="color" name="base" value="#0b74fd">
+        </div>
+      </div>
+
+      <div class="controls">
+        <div>
+          <label for="border">Border Radius</label>
+          <input id="border" type="range" name="border" min="0" max="50" value="0" data-changes="%">
+        </div>
+        <div>
+          <label for="height">Height:</label>
+          <input id="height" type="range" name="height" min="115" max="920" value="460" data-changes="px">
+        </div>
+        <div>
+          <label for="width">Width:</label>
+          <input id="width" type="range" name="width" min="175" max="1400" value="700" data-changes="px">
+        </div>
+      </div>
+
+      <div class="controls">
+        <div>
+          <label for="transform">Transform:</label>
+          <input id="transform" type="range" name="transform" min="0" max="360" value="0" data-changes="deg">
+        </div>
+        <div>
+          <label for="greyscale">Greyscale:</label>
+          <input id="greyscale" type="range" name="greyscale" min="0.0" max="1.0" step="0.1" value="0.0">
+        </div>
+        <div>
+          <label for="opacity">Day/Night:</label>
+          <input id="opacity" type="range" name="opacity" min="0.0" max="1.0" step="0.1" value="0.0">
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <img class="top" src="/images/gundam-day.png" />
+      <img src="/images/gundam-night.png" />
+    </div>
+
+    <script src="variables.js"></script>
+  </body>
+</html>

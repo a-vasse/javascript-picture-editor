@@ -1,0 +1,53 @@
+:root {
+  --base: #0b74fd;
+  --spacing: 10px;
+  --blur: 0px;
+  --border: 0%;
+  --height: 460px;
+  --width: 700px;
+  --transform: 0deg;
+  --grayscale: 0;
+  --opacity: 1;
+}
+
+.hl {
+  color: var(--base);
+}
+
+body {
+  text-align: center;
+  background: #002a69;
+  color: white;
+  font-family: 'helvetica neue', sans-serif;
+  font-weight: 50;
+  font-size: 24px;
+}
+
+.controls-container {
+  margin-bottom: 50px;
+  display:flex;
+  justify-content: space-evenly;
+}
+
+input {
+  width: 50px;
+}
+
+
+img {
+  position:fixed;
+  left:30%;
+  filter: blur(var(--blur)) grayscale(var(--greyscale));
+  padding: var(--spacing);
+  background: var(--base);
+  border-radius: var(--border);
+  height: var(--height);
+  width: var(--width);
+  transform: rotate(var(--transform));
+  background-size: cover;
+  opacity: var(--opacity);
+}
+
+img.top {
+  opacity:1;
+}
